@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Montserrat',sans-serif;
+}
+
+body{
+    background-color: #DAE0E8;
+}
+
+header{
+    padding: 30px 0;
+    width: 100%;
+    background-color: #E5163C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+}
+
+.LogoTopo {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.menu{
+   margin-right: 5%;
+}
+
+.menu ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   list-style: none;
+   margin-right: 5%;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    transition: 0.2s ease-in-out;
+}
+
+.menu ul li + li{
+    margin-left: 20px;
+}
+
+.menu li a:hover{
+    /* color: black; */
+    background-color: #CF1638;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.menu li a.active{
+    background-color: #CF1638;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+/* Planilhas */
+
+.SecaoPlanilhas{
+    /* align-items: center;
+    display: flex;
+    justify-content: center; */
+    flex-direction: column; 
+    width: 90%;
+    margin: 0 auto !important;
+}
+
+.IconePlanilha{
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    border: #E5163C solid 3px;
+    background-color: #E5163C;
+    width: max-content;
+    color: white;
+    border-radius: 3px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+.logoPlanilha{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.card-title{
+    border: 3px solid #E5163C;
+    border-radius: 5px;
+    width: max-content;
+    padding: 3px;
+    color: white;
+    background-color: #E5163C;
+}
+
+.card-container{
+    margin-top: 40px;
+    background-color: #e8ecf1;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: rgb(139, 138, 139);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: justify;
+    width: 100%
+}
+
+/* .ResultadoAnalise{
+    margin-top: 40px;
+    background-color: #e8ecf1;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: rgb(139, 138, 139);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: justify;
+    width: 100%
+} */
+
+.ResultadoAnalise h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border: 3px solid #E5163C;
+    border-radius: 5px;
+    width: max-content;
+    padding: 3px;
+    color: white;
+    background-color: #E5163C;
+}
+
+.h2Acompanhamento{
+    border: 3px solid #E5163C;
+    border-radius: 5px;
+    width: max-content;
+    padding: 3px;
+    color: white;
+    background-color: #E5163C;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.divAcompanhamento{
+    align-items: center;
+    background-color: #e8ecf1;
+
+    margin: 40px 70px;
+    border-radius: 10px;
+    color: rgb(139, 138, 139);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: justify;
+    width: max-content;
+}
+
+.LogoUser{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.LupaIcone{
+    width: 20px;
+    height: 17px;
+}
+
+.txtCodCliente{
+    border: none;
+    padding: 0 6px;
+    outline: none;
+    height: 45px;
+    border-radius: 3px;
+    cursor: text;
+    background-color: #EDF0F2;
+    font-size: 20px;
+}
+
+.txtCodCliente::placeholder{
+    color: #b9b8b8;
+    font-size: 20px;
+}
+
+.input-search{
+    display: flex;
+    align-items: center;
+    
+}
+
+.input-search button{
+   height: 45px;
+   margin-left: 10px;
+   padding: 10px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+
+.input-search button:hover{
+    background: #E5163C;
+}
+
+.btnLupa{
+    border-style: none;
+}
+
+.btnLupa:active{
+    background-color: gray;
+    border-radius: 3px;
+}
+
+#excel_data table{
+    width: 100%;
+}
+#excel_data table tbody tr td {
+    font-size: 14px !important;
+    padding: 6px 2px;
+}
+#excel_data table tbody tr th{
+    background-color: #E5163C;
+    padding: 4px 4px;
+    color: #EDF0F2;
+}
+
+#excel_data table tbody tr:nth-child(even){
+    background-color: #FFf;
+}
+
+

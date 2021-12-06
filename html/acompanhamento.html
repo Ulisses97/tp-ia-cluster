@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icones/favicon.png" type="image/x-icon">
+    <!-- <script src="https://unkpg.com/read-excel-file@4.x/bundle/read-excel-file.min.js"></script> -->
+   
+    
+    <title>Cluster</title>
+</head>
+
+<body>
+    <header>
+        <div class="LogoTopo">
+            <img src="/img/icones/Logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./index.html">Planilhas</a></li>
+                <li><a href="./acompanhamento.html">Acompanhamento</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="SecaoPlanilhas">
+
+        <div class="card-container">
+            <h2 class="h2Acompanhamento"><img src="/img/icones/Icon.png" class="LogoUser" alt="Usuário">Acompanhamento
+            </h2><br><br>
+            <p>Digite o código do cliente para um acompanhamento detalhado</p><br><br>
+            <!-- <label for="codcliente">Código do cliente</label> -->
+            <div class="input-search" >
+                <input placeholder="Insira o código" type="text" name="codcliente" id="codcliente" class="txtCodCliente">
+            <button class="btnLupa"><img src="/img/icones/Vector (1).png" class="LupaIcone" alt="LupaIcone"></button>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h2 class="card-title" >Resultado da Analise</h2>
+            <label for="ResultadoAcompanhamento" class="ResultadoAcompanhamento"></label><br><br>
+            <div class="container-results">
+
+            </div>
+        </div>
+    </section>
+
+    <script src="../script/script.js"></script>
+</body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icones/favicon.png" type="image/x-icon">
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    
+    <title>Cluster</title>
+</head>
+
+<body>
+    <header>
+        <div class="LogoTopo">
+           <img src="/img/icones/Logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./index.html">Planilhas</a></li>
+                <li><a href="./acompanhamento.html">Acompanhamento</a></li>
+            </ul>
+        </div>
+    </header>
+
+<section class="SecaoPlanilhas" >
+
+    <div class="card-container">
+        <h2 class ="card-title"><img src="/img/icones/Vector.png" class="logoPlanilha" alt="">Planilhas</h2>
+        <br>   
+        <p>Selecione as planilha que deseja para realizar a análise</p>
+        <div>
+            <input  type="file" id="excel_file" name="files[]" multiple />
+            <!-- <input  type="file" id="files" name="files[]" multiple /> -->
+            <output id="list"></output>
+
+            <script>
+            function handleFileSelect(evt) {
+                var files = evt.target.files; // FileList object
+                // files is a FileList of File objects. List some properties.
+                var output = [];
+                for (var i = 0, f; f = files[i]; i++) {
+                output.push('<input type="checkbox" id="f.name" name="f.name">',f.name,'<br>');
+                }
+                document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+            }
+            document.getElementById('files').addEventListener('change', handleFileSelect, false);
+            </script>
+        </div>   
+    </div>
+
+    <div class="card-container">
+        <h2 class ="card-title" >Resultado da análise</h2>
+        <label for="ResultadoClusterizacao" class="lblResultado"></label><br><br>
+
+        <div class="container-results">
+            <div id="excel_data" class="mt-5"></div>
+        </div>
+    </div>
+</section>
+
+<script src="../script/script.js"></script>
+
+</body>
